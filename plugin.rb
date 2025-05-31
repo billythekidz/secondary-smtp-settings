@@ -42,7 +42,7 @@ after_initialize do
       }
 
       settings[:openssl_verify_mode] = SiteSetting.smtp_openssl_verify_mode if SiteSetting.smtp_openssl_verify_mode
-      settings.reject { |_, y| y.blank? }
+      #settings.reject { |_, y| y.blank? }
     end
   end
 
